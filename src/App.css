@@ -31,7 +31,7 @@
 }
 
 .heading{
-  color: rgb(140, 146, 146);
+  color: rgb(187, 192, 192);
   position: relative;
   text-align: center;
   margin-top: 15%;
@@ -43,7 +43,7 @@
   color:rgb(122, 145, 138);
   padding: 10px;
 }
-.heading::before,
+/* .heading::before,
 .heading::after {
   content: "";
   position: absolute;
@@ -62,7 +62,7 @@
   background: black;
   animation: typewriter 3s steps(19) 0s forwards,
     blink 4s steps(18) 0s infinite;
-}
+} */
 
 @keyframes typewriter {
   
