@@ -1,36 +1,36 @@
-import React from 'react'
-
+import React from 'react';
 
 export default function Navbar() {
   return (
     <div className='navbar-stick'>
-    <div >
-      <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/">LIVELEEN 
-         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon light"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="src\components\About.jsx">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/">Projects</a>
-          </li> 
-          <li class="nav-item">
-            <a class="nav-link" href="/">Contact</a>
-          </li>
-        </ul>
+      <div>
+        <nav className="navbar navbar-expand-lg">
+          <div className="container-fluid">
+            <a className="navbar-brand zoom logo-font-LK" href="/"> L K <h6 className='logo'> Liveleen Kaur</h6> </a>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon light"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link zoom" href="/about">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link zoom" href="/technology">Skills</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link zoom" href="/projects">Projects</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link zoom" href="/contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <hr className='orange'/>
       </div>
+      
     </div>
-    </nav>
-  </div>
-  </div>
-  )
+  );
 }
