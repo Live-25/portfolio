@@ -30,23 +30,3 @@ export default App;
 
 
 
-/* function App() {
-  return (
-    <BrowserRouter>
-    <div className="App">
-    <Routes>
-   
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/technology" element={<Technology />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/projects" element={<Project />} />
-    </Routes>
-
-     
-    </div>
-    </BrowserRouter>
-  );
-}
-
-export default App;
