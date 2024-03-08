@@ -10,9 +10,10 @@ export default function Home() {
       <h1 className='heading zoom'> Hi, I am Liveleen !</h1>
       <h3 className='tagline'> I'm a <span>Front-end Developer | </span></h3>
       <div className='ul'>
-            <i className="fa-brands fa-instagram fa-2xl icon-color  animate__animated zoom"></i>
-            <i className="fa-brands fa-github fa-2xl icon-color  animate__animated zoom"></i>
-            <i className="fa-brands fa-linkedin-in fa-2xl icon-color animate__animated zoom"></i>
+      <a className="light-colour-navbar" href="https://www.instagram.com/liveleenn"> <i className="fa-brands fa-instagram fa-2xl icon-color  animate__animated zoom"></i> </a>
+      <a className="light-colour-navbar" href="https://github.com/Live-25"><i className="fa-brands fa-github fa-2xl icon-color  animate__animated zoom"></i> </a>     
+      <a className="light-colour-navbar" href="https://www.linkedin.com/in/liveleen-kaur-4b4033248"><i className="fa-brands fa-linkedin-in fa-2xl icon-color animate__animated zoom"></i> </a>      
+            
         </div>
         <div className='home-about'>
         <h2 className=' h2 center' style={{fontSize:'3rem' }}> About me </h2>

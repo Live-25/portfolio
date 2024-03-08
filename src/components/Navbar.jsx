@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Navbar() {
+
+  const [isToggled, setToggle] = useState(false);
+
+  const toggleButton = () => {
+    setToggle(!isToggled);
+  };
+
+
   return (
     <div className='navbar-stick'>
       <div>
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
             <a className="navbar-brand zoom logo-font-LK" href="/"> L K <h6 className='logo'> Liveleen Kaur</h6> </a>
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button onClick={toggleButton} className="navbar-toggler" type="button" data-bs-toggle="collapse"  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon light"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
+            <div className={"collapse navbar-collapse" + (isToggled ? " show" : "")} id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <a className="nav-link zoom" href="/about">About</a>
