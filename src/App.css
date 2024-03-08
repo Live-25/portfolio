@@ -124,6 +124,7 @@ button:hover {
   background-color:transparent;
   border:solid;
   border-color: #1BA098;
+ 
 }
 .home-about-btn{
   background-color:transparent;
@@ -212,6 +213,8 @@ button:hover {
   color:#04c4b7;
   max-width: 100%;
   padding-bottom: 4%;
+  margin-bottom: auto;
+ 
 }
 
 
@@ -230,13 +233,16 @@ button:hover {
 }
 .tech{
   padding-bottom: 4%;
-
   display: flex;
   flex-direction: column;
+  flex: 100%;
   gap: 20px;
   margin: 2% 5% 4% 5% ;
- @media (min-width:600px) {
+
+ 
+ @media (min-width:1020px) {
   flex-direction: row;
+  flex: 20%;
  }
 }
 .tech-icon{

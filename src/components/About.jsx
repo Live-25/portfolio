@@ -25,8 +25,8 @@ export default function About() {
         <h5 className='justify'> Let's connect, collaborate, and build something amazing together. </h5>
 
         <button className='home-about-btn1 '> <a className="home-about-btn" href='/technology'> Know skills </a>   </button>
-    <Footer />
+    
     </div>
-    /* ALL GOOD */
+
   )
 }

@@ -2,24 +2,28 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
+
+
 export default function Technology() {
   return (
+    <div> <Navbar />
      <div className='technology'>
-     <Navbar />
+     
         <h2  className="h2 justify" style={{fontSize:'2rem', textDecoration:'underline'}}> Technologies and Skills</h2>
         <h3 className='justify light-colour-navbar'> Technologies:</h3>
         <div className='tech'> 
-        <i class="fa-brands fa-html5 fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
-        <i class="fa-brands fa-js fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
-        <img className='zoom tech-icon2' src='data:image/png;base64,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' />
-        <i class="fa-solid fa-c fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
-        <img className='zoom round tech-icon2' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAclBMVEUAAAD///87Ozv4+PgzMzN0dHRXV1chISEXFxf8/PwZGRn19fXx8fGrq6vS0tIoKChHR0fn5+ctLS2xsbHExMSBgYFNTU2Tk5NwcHA+Pj6enp5mZmZ9fX1SUlIKCgq8vLzg4OCKiorZ2dmXl5deXl7Nzc22aD37AAAEY0lEQVR4nO3d6ZqqIAAGYLC01NQWWybbp7n/WzzZLMmiCdiReL73r8rwjaLAoEMopWESjIl7xkES3tIRStOo77q8TJSWCdO+q/FSKSWhu2ewFIUk6bsOL5aQoO8qvFhAXLyLVrmeDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXBN5q+vGL4Jpdui7Kt2bF0k6o38Gp/y8dyhmtj4NqGhy3PRds24UqSTd77lM3v8jG/6sPt9dPuy7ikaK05N8pUXWdzW1RXmLfOW1uuu7ppoK2e1F7ustm2PSOt9N/IbfhPlSCXhzriln5C93H1o18PylP9cP8MShzS2mTcRj+fUtelHPOLw/pML8Rdf/eKIckFJJiiz+3ajaOQh+DwynnSTiPXsISi0ay/GUKjB/3OUmr+gdXnQC0pNQzrqyNVeqwbFy5LabUFULeYJ0Wwyj8WHkXZdH2YMkFH7ZTGNWqQHTSibdJfuxlMXLuYb08Sk01QGfcMTsovI8WTEFmwbiebJ8suZ+5lrrhd9hyJxpX6EOAVPwSD+MlNgI07rb2Y7Zbc1vtjSheI0KNX/IKi1tJmy1M2EUU1Z8bdz/r28Xi48DOxNuuYCzZ0Oj63drzCX7WZnwwJ3CQYuO4Wq93UmHwVYm/ORO4cqkMCsTcg85lVqJbEzIPmkVe1oCGxMeaZdF25iQvc+YdnktTMhepBPTb51amPDMFGz8weG5dsI9U5EOh/ns3IzG4HrkVQVhtbjzsLqN7yBk1Y3DDVORldd0pBJmPKc8LDtsVaYG4uOjl5AtVGZNJvp/SoiYnyOZlGjkKU99FD9HXvm+8NOMepN3hEyZYuqmB+toTF5995iG6gfGmjcftn0rNkOlCeQfp/uROrNCR72EV6YQxYM1qknp/nZgpnNgmxGBRGGQ8EMrYdkSzlpHNo9a6/gGCYuamjQrH7n8cKYdvTGB++fQ/XbI3ksVB79vcS9lrzQXn4dj5/s07vdLCbsyQWMWyvqxxZkp2MXxITvGj01LtnCMz83TmJ5EGxNyfxs1XOxkY0J2hOjifCm/RMFsOZeVCdeUZbTUycqE3L2Ghi3WVl6TxXYv22BnQn60NnnWiS++uyMnSf/AzoRjvo84KBr3fwwpxP3sTMitPih91u88r/RkB8KzxdKERFzWndb1UNlVDcJgxNaEcyFhy/U0wmIMWxNKrlMqromabsUBD9+PtXVNVKt1baFsB+F3beu6NllTbEOsibVrEzXXl0oyWLu+lBx01ghL7kb2rhF2f503UV+rv6wpx9a1+kT1fQtp19t2zr8zc3sqtX3vyWxxWK+ubW44See9qv/K9fcPS03vkMZbN/5HtOvvAd9x73LHl/z8ls+HJ8r38f3dxs338QEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIy48Y2AemPyhv/XVklAjD8PbLmEhG/6LZmWopDQtO9KvFRKCaWpu2cxSmmZkIZJ4OIddRwk5ZfF/gG0vzih0wUw6gAAAABJRU5ErkJggg==' />
+        <i className="fa-brands fa-html5 fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
+        <i className="fa-brands fa-css3-alt fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
+        <i className="fa-brands fa-js fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
+        <i className="fa-brands fa-node fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
+        <i className="fa-brands fa-java fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
      
         </div>
         <h3 className='justify light-colour-navbar'> Frameworks:</h3>
         <div className='tech'> 
-        <i class="fa-brands fa-react fa-spin fa-spin-reverse fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
-        <i class="fa-brands fa-bootstrap fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
+        <i className="fa-brands fa-react fa-spin fa-spin-reverse fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
+        <i className="fa-brands fa-bootstrap fa-10x zoom tech-icon" style={{color:"#f0f2f5"}}></i>
+        </div>
         </div>
         <Footer />
     </div> 
