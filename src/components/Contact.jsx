@@ -1,33 +1,24 @@
+import Navbar from './Navbar'
+import React from 'react';
 
-import React from 'react'
+import Footer from './Footer'
 
 export default function Contact() {
   return (
-    <div className='contact'>
-    <div> 
-        <h2 className='h2 center large-text'> CONTACT ME..</h2>
-     
-            <form action="/" method="post" className='contact-form'>
-            <label  for="name">Name:</label> <br />
-            <input type="text" id="name" name="name" required /> <br />
 
-            <label for="email">Email:</label> <br />
-            <input type="email" id="email" name="email" required /> <br />
-
-            <label for="message">Message:</label> <br />
-            <textarea id="message" name="message" required></textarea> <br />
-
-            <button type="submit">Submit</button>  
-        </form>  
-        </div>
         <div>
-          <h4 className=' center icons'> Or Connect through :</h4>
-          <h4 > 
-          <i className="fa-brands fa-instagram fa-xl icons zoom" style={{ color: '#707275' }}> </i> Instagram <br /> 
-            <i className="fa-brands fa-github fa-xl icons zoom" style={{ color: '#707275' }} > </i> Github <br />
-            <i className="fa-brands fa-linkedin-in fa-xl icons" style={{ color: '#707275' }}> </i> LinkedIn<br />
-          </h4>
+        <Navbar />
+        <div className="contact">
+        <h4 className='icons light-colour-navbar'> Get in touch with me through:</h4>
+        <h5 className="connect"><i className="fa-brands fa-instagram fa-xl zoom" style={{ color: '#707275' }}> </i> <a href="https://www.instagram.com/liveleenn" className='connect'> Instagram </a><br /> </h5>
+        <h5 className="connect">  <i className="fa-brands fa-github fa-xl zoom" style={{ color: '#707275' }} > </i> <a href="https://github.com/Live-25" className='connect'> Github</a> <br /> </h5>
+        <h5 className="connect">  <i className="fa-brands fa-linkedin-in fa-xl zoom" style={{ color: '#707275' }}> </i><a href="https://www.linkedin.com/in/liveleen-kaur-4b4033248" className='connect'>  LinkedIn</a> <br /></h5>
+        <h5 className="connect">  <i className="fa-solid fa-envelope fa-xl zoom" style={{ color: '#707275' }}> </i> <a href="mailto:liveleen25@gmail.com" className='connect'> liveleen25@gmail.com</a> <br /></h5>
         </div>
-    </div>
+        <Footer />
+        </div> 
+  
   )
 }
+
+/* SLIGHT ISSUE */
